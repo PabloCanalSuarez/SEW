@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE rutas SYSTEM "rutas.dtd"> -->
+<rutas>
+    <ruta>
+        <nombre>Ruta por Oviedo</nombre>
+        <tipo>Arquitectura y monumentos</tipo>
+        <transporte>A pie</transporte>
+        <fecha>16 del 04 de 2020</fecha>
+        <hora>10:00</hora>
+        <duracion>9 horas</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>Visita turistica por la zona antigua de Oviedo</descripcion>
+        <publico>Se puede ir con niños</publico>
+        <lugarInicio>Oviedo</lugarInicio>
+        <calleInicio>Calle Uria</calleInicio>
+        <coordenadas>
+            <longitud>-5.84932387</longitud>
+            <latitud>43.36273115</latitud>
+            <altitud>239</altitud>
+        </coordenadas>
+        <referencias>
+            <referencia>http://prerromanicoasturiano.es</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Oviedo</referencia>
+            <referencia>https://www.oviedo.es/descubre/imprescindibles/prerromanico</referencia>
+        </referencias>
+        <recomendacion>7</recomendacion>
+        <hitos>
+            <hito>
+                <nombre>San Julian de los Prados</nombre>
+                <descripcion>Iglesia prerromanica del siglo IX</descripcion>
+                <coordenadas>
+                    <longitud>-5.83725</longitud>
+                    <latitud>43.367694</latitud>
+                    <altitud>195</altitud>
+                </coordenadas>
+                <distancia>850</distancia>
+                <galeriaFotos>
+                    <foto>img/sanjuliandelosprados.jpg"</foto>
+                    <foto>img/sanjuliandelosprados2.jpg"</foto>
+                </galeriaFotos>
+            </hito>
+
+            <hito>
+                <nombre>Catedral de Oviedo</nombre>
+                <descripcion>Catedral de estilo gótico</descripcion>
+                <coordenadas>
+                    <longitud>-5.843081</longitud>
+                    <latitud>43.362583</latitud>
+                    <altitud>242</altitud>
+                </coordenadas>
+                <distancia>720</distancia>
+                <galeriaFotos>
+                    <foto>img/catedral.jpg"</foto>
+                    <foto>img/catedral2.jpg"</foto>
+                </galeriaFotos>
+            </hito>
+
+            <hito>
+                <nombre>San Miguel de Lillo</nombre>
+                <descripcion>Iglesia prerromanica construida por Ramiro I</descripcion>
+                <coordenadas>
+                    <longitud>-5.86837466</longitud>
+                    <latitud>43.38030365</latitud>
+                    <altitud>395</altitud>
+                </coordenadas>
+                <distancia>3600</distancia>
+                <galeriaFotos>
+                    <foto>img/sanmigueldelillo.jpg"</foto>
+                    <foto>img/sanmigueldelillo2.jpg"</foto>
+                </galeriaFotos>
+            </hito>
+        </hitos>
+    </ruta>
+
+</rutas>

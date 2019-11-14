@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+E:\SEW\3 - XML\EclipseWorkspace\.metadata\.plugins\org.eclipse.jdt.core
+3402216493.index
+4228217144.index
+2915775899.index
+3511694793.index
+4102104469.index
+4090489998.index
+710975305.index

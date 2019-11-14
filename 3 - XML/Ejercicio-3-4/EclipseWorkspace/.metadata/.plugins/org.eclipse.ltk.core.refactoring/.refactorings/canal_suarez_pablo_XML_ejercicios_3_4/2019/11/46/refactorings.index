@@ -1,0 +1,14 @@
+1573443039158	Rename field 'galeria'
+1573445540794	Delete element
+1573445844988	Rename type 'Rutas'
+1573445855893	Rename type 'Ruta'
+1573445864835	Rename type 'Hito'
+1573445873018	Rename type 'Hitos'
+1573445881733	Rename type 'Referencias'
+1573445889425	Rename type 'Coordenadas'
+1573445899960	Rename type 'Foto'
+1573445908664	Rename type 'GaleriaFotos'
+1573445923796	Move compilation units
+1573445935216	Move compilation units
+1573446080136	Delete element
+1573446107376	Rename resource 'rutas.xml'

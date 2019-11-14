@@ -1,0 +1,30 @@
+package Ejercicio_3.app;
+
+import java.io.File;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+    
+    private static Rutas loadXml() throws JAXBException {
+		File file = new File("files/rutas.xml");
+		JAXBContext jaxbContext = JAXBContext.newInstance(Rutas.class);
+		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+		return (Rutas) jaxbUnmarshaller.unmarshal(file);
+	}
+
+	private static void createXml(Rutas rutas) throws JAXBException {
+		File file = new File("files/rutasGeneradas.xml");
+		JAXBContext jaxbContext = JAXBContext.newInstance(Rutas.class);
+		Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
+		jaxbMarshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+		jaxbMarshaller.marshal(rutas, file);
+	}
+}

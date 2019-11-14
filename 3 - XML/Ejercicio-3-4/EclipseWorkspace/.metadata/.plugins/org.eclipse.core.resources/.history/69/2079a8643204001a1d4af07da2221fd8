@@ -1,0 +1,21 @@
+package Ejercicio_3.app.logic;
+
+import java.util.*;
+
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+public class Rutas {
+	
+	private List<Ruta> rutas = new ArrayList<>();
+
+	public List<Ruta> getRutas() {
+		return rutas;
+	}
+
+	@XmlElement(name = "ruta")
+	public void setRutas(List<Ruta> rutas) {
+		this.rutas = rutas;
+	}
+}

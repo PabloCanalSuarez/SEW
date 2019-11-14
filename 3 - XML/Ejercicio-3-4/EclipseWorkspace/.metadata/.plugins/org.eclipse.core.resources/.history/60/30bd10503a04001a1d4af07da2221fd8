@@ -1,0 +1,27 @@
+package Ejercicio_3.app.logic;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.bind.annotation.XmlElement;
+
+public class GaleriaFotos {
+	
+	private List<FotoElement> fotos = new ArrayList<FotoElement>();
+
+	/**
+	 * @return the fotos
+	 */
+	public List<FotoElement> getFotos() {
+		return fotos;
+	}
+
+	/**
+	 * @param fotos the fotos to set
+	 */
+	@XmlElement(name = "foto")
+	public void setFotos(List<FotoElement> fotos) {
+		this.fotos = fotos;
+	}
+
+}

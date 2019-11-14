@@ -1,0 +1,156 @@
+package Ejercicio_3.app.logic;
+
+import javax.xml.bind.annotation.XmlElement;
+
+public class Ruta {
+
+	private String nombre;
+	private String tipo;
+	private String transporte;
+	private String fechaInicio;
+	private String hora;
+	private String duracion;
+	private String descripcion;
+	private String publico;
+	private String lugarInicio;
+	private String calleInicio;
+	private String recomendacion;
+	private Coordenadas coordenadas;
+	private Referencias referencias;
+	private Hitos hitos;
+
+	@XmlElement
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	@XmlElement
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	@XmlElement
+	public void setTransporte(String transporte) {
+		this.transporte = transporte;
+	}
+
+	@XmlElement
+	public void setFechaInicio(String fechaInicio) {
+		this.fechaInicio = fechaInicio;
+	}
+
+	@XmlElement
+	public void setHora(String hora) {
+		this.hora = hora;
+	}
+
+	@XmlElement
+	public void setDuracion(String duracion) {
+		this.duracion = duracion;
+	}
+
+	@XmlElement
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	@XmlElement
+	public void setPublico(String publico) {
+		this.publico = publico;
+	}
+
+	@XmlElement
+	public void setLugarInicio(String lugarInicio) {
+		this.lugarInicio = lugarInicio;
+	}
+
+	@XmlElement
+	public void setCalleInicio(String calleInicio) {
+		this.calleInicio = calleInicio;
+	}
+
+	@XmlElement
+	public void setCoordenadas(Coordenadas coordenadas) {
+		this.coordenadas = coordenadas;
+	}
+
+	@XmlElement
+	public void setReferencias(Referencias referencias) {
+		this.referencias = referencias;
+	}
+
+	@XmlElement
+	public void setRecomendacion(String recomendacion) {
+		this.recomendacion = recomendacion;
+	}
+
+	@XmlElement
+	public void setHitos(Hitos hitos) {
+		this.hitos = hitos;
+	}
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	public String getTransporte() {
+		return transporte;
+	}
+
+	public String getFechaInicio() {
+		return fechaInicio;
+	}
+
+	public String getHora() {
+		return hora;
+	}
+
+	public String getDuracion() {
+		return duracion;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	public String getPublico() {
+		return publico;
+	}
+	
+	public String getCalleInicio() {
+		return calleInicio;
+	}
+
+	public String getLugarInicio() {
+		return lugarInicio;
+	}
+	
+	public Coordenadas getCoordenadas() {
+		return coordenadas;
+	}
+
+	public Referencias getReferencias() {
+		return referencias;
+	}
+	
+	public String getRecomendacion() {
+		return recomendacion;
+	}
+	
+	public Hitos getHitos() {
+		return hitos;
+	}
+
+	@Override
+	public String toString() {
+		return "Ruta [nombre=" + nombre + ", tipo=" + tipo + ", transporte=" + transporte + ", fechaInicio="
+				+ fechaInicio + ", hora=" + hora + ", duracion=" + duracion + ", descripcion=" + descripcion
+				+ ", publico=" + publico + ", lugarInicio=" + lugarInicio + ", calleInicio=" + calleInicio
+				+ ", recomendacion=" + recomendacion + ", coordenadas=" + coordenadas + ", referencias=" + referencias
+				+ ", hitos=" + hitos + "]";
+	}
+}

@@ -1,0 +1,21 @@
+package Ejercicio_3.app.logic;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.bind.annotation.XmlElement;
+
+public class Referencias {
+	
+private List<String> referencias = new ArrayList<String>();
+	
+	public List<String> getReferencias() {
+		return referencias;
+	}
+
+	@XmlElement(name = "referencia")
+	public void setHitos(List<String> referencias) {
+		this.referencias = referencias;
+	}
+
+}

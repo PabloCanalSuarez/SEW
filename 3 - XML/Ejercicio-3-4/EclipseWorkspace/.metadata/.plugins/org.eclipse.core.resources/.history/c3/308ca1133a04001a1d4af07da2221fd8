@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE rutas SYSTEM "rutas.dtd"> -->
+<rutas>
+    <ruta>
+        <nombre>Ruta por cuenca del Nalón</nombre>
+        <tipo>Gastronómica</tipo>
+        <transporte>Coche</transporte>
+        <fecha>11 de cada mes</fecha>
+        <hora>10:00</hora>
+        <duracion>7 horas</duracion>
+        <agencia>Viajes Rodolfo</agencia>
+        <descripcion>Ruta en la que se podran degustar las diferentes comidas de la cuenca del nalon parte de gozar de los preciosos paisajes de las montañas que la rodean</descripcion>
+        <personasAdecuadas>Se puede traer a quien quiera pues la ruta es en coche y no hace falta caminar</personasAdecuadas>
+        <lugarInicio>La Felguera</lugarInicio>
+        <calleInicio>Estacion de Autobuses</calleInicio>
+        <coordenada>
+            <altitud>5</altitud>
+            <longitud>-5.691218</longitud>
+            <latitud>43.303328</latitud>
+        </coordenada>
+        <bibliografia>
+            <referencia>https://es.wikipedia.org/wiki/Sama</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Laviana_(concejo)</referencia>
+            <referencia>https://es.wikipedia.org/wiki/El_Entrego</referencia>
+        </bibliografia>
+        <recomendacion>8</recomendacion>
+        <hitos>
+            <hito>
+                <sitio>Parque Dorado</sitio>
+                <descripcion>Parque de sama que es bastante bonito y pequeño</descripcion>
+                <coordenada>
+                    <altitud>155</altitud>
+                    <longitud>-5.681422</longitud>
+                    <latitud>43.295387</latitud>
+                </coordenada>
+                <galeria>http://lacuencadelnalon.es/web/wp-content/uploads/2018/01/parque-dorado_89.jpg</galeria>
+            </hito>
+            <hito>
+                <sitio>Museo de la mineria y de la industria</sitio>
+                <descripcion>Un museo en el que podras ver cantidad de maquinaria usada en la mineria e industria que tanto se explotó en Asturias y ver como eran las minas</descripcion>
+                <coordenada>
+                    <altitud>227</altitud>
+                    <longitud>-5.650454</longitud>
+                    <latitud>43.287829</latitud>
+                </coordenada>
+                <distancia unidades="kilometros">2.9</distancia>
+                <galeria></galeria>
+            </hito>
+            <hito>
+                <sitio>Area Recreativa El Barrillon</sitio>
+                <descripcion>Lugar para contemplar el rio Nalón</descripcion>
+                <coordenada>
+                    <altitud>355</altitud>
+                    <longitud>-5.496153</longitud>
+                    <latitud>43.233926</latitud>
+                </coordenada>
+                <distancia unidades="kilometros">16.1</distancia>
+                <galeria></galeria>
+            </hito>
+        </hitos>
+    </ruta>
+
+    <ruta>
+        <nombre>Ruta De Dinosaurios</nombre>
+        <tipo>Historica</tipo>
+        <transporte>Andando</transporte>
+        <fecha>20 de cada mes</fecha>
+        <hora>11:00</hora>
+        <duracion>3 horas</duracion>
+        <agencia>Viajes Pepito</agencia>
+        <descripcion>Primero se visitara el museo para posteriormente ir andando a la playa cercana con un guia que ira
+            explicando datos relativos a la epoca de los dinosaurios en Asturias
+        </descripcion>
+        <personasAdecuadas>Se recomienda ir solo gente que este acostumbrada a andar dado que se andara bastante</personasAdecuadas>
+        <lugarInicio>Museo Muja</lugarInicio>
+        <calleInicio>Aparcamiento del museo</calleInicio>
+        <coordenada>
+            <altitud>163</altitud>
+            <longitud>43.501351</longitud>
+            <latitud>-5.273975</latitud>
+        </coordenada>
+        <bibliografia>
+            <referencia>http://www.museojurasicoasturias.com/</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Museo_del_Jur%C3%A1sico_de_Asturias</referencia>
+            <referencia>https://www.asturnatura.com/naturaleza/la-costa-de-los-dinosaurios-los-yacimientos-de-icnitas.html
+            </referencia>
+        </bibliografia>
+        <recomendacion>9</recomendacion>
+        <hitos>
+            <hito>
+                <sitio>Museo Muja</sitio>
+                <descripcion>Museo donde se comienza la ruta</descripcion>
+                <coordenada>
+                    <altitud>163</altitud>
+                    <longitud>43.501351</longitud>
+                    <latitud>-5.273975</latitud>
+                </coordenada>
+                <galeria>https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/MUJA_01.jpg/275px-MUJA_01.jpg</galeria>
+            </hito>
+            <hito>
+                <sitio>Playa de la griega</sitio>
+                <descripcion>Playa en la que se encuentran indicios de que hubo dinosaurios</descripcion>
+                <coordenada>
+                    <altitud>4</altitud>
+                    <longitud>43.501543</longitud>
+                    <latitud>-5.261519</latitud>
+                </coordenada>
+                <distancia unidades="kilometros">2.4</distancia>
+                <galeria></galeria>
+            </hito>
+            <hito>
+                <sitio>Icnitas de Dinosaurios</sitio>
+                <descripcion>Zona Exacta donde se encuentran Icnitas de Dinosaurios</descripcion>
+                <coordenada>
+                    <altitud>4</altitud>
+                    <longitud>43.500468</longitud>
+                    <latitud>-5.255353</latitud>
+                </coordenada>
+                <distancia unidades="kilometros">0.4</distancia>
+                <galeria></galeria>
+            </hito>
+        </hitos>
+    </ruta>

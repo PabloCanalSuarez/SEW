@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rutas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="rutasVisualStudio.xsd">
+    <ruta nombre="Ruta por Oviedo">
+        <tipo>Arquitectura y monumentos</tipo>
+        <transporte>A pie</transporte>
+        <fechaInicio>2020-04-16</fechaInicio>
+        <hora>10:00:00</hora>
+        <duracion>9 horas</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>Visita turistica por la zona antigua de Oviedo</descripcion>
+        <publico>Se puede ir con niños</publico>
+        <lugarInicio>Oviedo</lugarInicio>
+        <calleInicio>Calle Uria</calleInicio>
+        <coordenadas>
+            <longitud>-5.84932387</longitud>
+            <latitud>43.36273115</latitud>
+            <altitud unidad="metro">239</altitud>
+        </coordenadas>
+        <referencias>
+            <referencia>http://prerromanicoasturiano.es/</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Oviedo</referencia>
+            <referencia>https://www.oviedo.es/descubre/imprescindibles/prerromanico</referencia>
+        </referencias>
+        <recomendacion>7</recomendacion>
+        <hitos>
+            <hito nombre="San Julian de los Prados">
+                <descripcion>Iglesia prerromanica del siglo IX</descripcion>
+                <coordenadas>
+                    <longitud>-5.83725</longitud>
+                    <latitud>43.367694</latitud>
+                    <altitud unidad="metro">195</altitud>
+                </coordenadas>
+                <distancia unidad="metro">850</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/sanjuliandelosprados.jpg"/>
+                    <foto ruta="img/sanjuliandelosprados2.jpg"/>
+                </galeriaFotos>
+                <galeriaVideos>
+                    <video ruta="https://www.youtube.com/watch?v=X8FWRyPgjEI"/>
+                </galeriaVideos>
+            </hito>
+
+            <hito nombre="Catedral de Oviedo">
+                <descripcion>Catedral de estilo gótico</descripcion>
+                <coordenadas>
+                    <longitud>-5.843081</longitud>
+                    <latitud>43.362583</latitud>
+                    <altitud unidad="metro">242</altitud>
+                </coordenadas>
+                <distancia unidad="metro">720</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/catedral.jpg"/>
+                    <foto ruta="img/catedral2.jpg"/>
+                </galeriaFotos>
+                <galeriaVideos>
+                    <video ruta="https://www.youtube.com/watch?v=yX6hrfJAdUA"/>
+                </galeriaVideos>
+            </hito>
+
+            <hito nombre="San Miguel de Lillo">
+                <descripcion>Iglesia prerromanica construida por Ramiro I</descripcion>
+                <coordenadas>
+                    <longitud>-5.86837466</longitud>
+                    <latitud>43.38030365</latitud>
+                    <altitud unidad="metro">395</altitud>
+                </coordenadas>
+                <distancia unidad="metro">3600</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/sanmigueldelillo.jpg"/>
+                    <foto ruta="img/sanmigueldelillo2.jpg"/>
+                </galeriaFotos>
+                <galeriaVideos>
+                    <video ruta="https://www.youtube.com/watch?v=ggyyPqTmfzA"/>
+                </galeriaVideos>
+            </hito>
+        </hitos>
+    </ruta>
+
+    <ruta nombre="Ruta de pinchoteo por Oviedo">
+        <tipo>Mixta tapas y monumentos</tipo>
+        <transporte>Bicicleta</transporte>
+        <fechaInicio>2020-01-20</fechaInicio>
+        <hora>12:00:00</hora>
+        <duracion>3 horas</duracion>
+        <agencia>Sin agencia</agencia>
+        <descripcion>Ruta de pinchoteo, tapas y monumentos por los lugares emblemáticos de Oviedo</descripcion>
+        <publico>Se puede ir con niños</publico>
+        <lugarInicio>Oviedo</lugarInicio>
+        <calleInicio>Calle Fruela</calleInicio>
+        <coordenadas>
+            <longitud>-5.847934</longitud>
+            <latitud>43.361734</latitud>
+            <altitud unidad="metro">233</altitud>
+        </coordenadas>
+        <referencias>
+            <referencia>https://www.oviedo.es/</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Oviedo</referencia>
+            <referencia>https://www.tripadvisor.es/Restaurants-g187452-zfd10942-Oviedo_Asturias-Tapas.html</referencia>
+        </referencias>
+        <recomendacion>6</recomendacion>
+        <hitos>
+            <hito nombre="La Corte de Pelayo">
+                <descripcion>Restaurante de cocina española</descripcion>
+                <coordenadas>
+                    <longitud>-5.847934</longitud>
+                    <latitud>43.361734</latitud>
+                    <altitud unidad="metro">233</altitud>
+                </coordenadas>
+                <distancia unidad="metro">0</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/cortedepelayo.jpg"/>
+                    <foto ruta="img/cortedepelayo2.jpg"/>
+                </galeriaFotos>
+                <galeriaVideos>
+                    <video ruta="https://www.youtube.com/watch?v=yN0gsQqbDRY"/>
+                </galeriaVideos>
+            </hito>
+
+            <hito nombre="Catedral de Oviedo">
+                <descripcion>Catedral de estilo gótico</descripcion>
+                <coordenadas>
+                    <longitud>-5.843081</longitud>
+                    <latitud>43.362583</latitud>
+                    <altitud unidad="metro">242</altitud>
+                </coordenadas>
+                <distancia unidad="metro">320</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/catedral.jpg"/>
+                    <foto ruta="img/catedral2.jpg"/>
+                </galeriaFotos>
+                <galeriaVideos>
+                    <video ruta="https://www.youtube.com/watch?v=yX6hrfJAdUA"/>
+                </galeriaVideos>
+            </hito>
+
+            <hito nombre="Cafe Bar Goya 13">
+                <descripcion>Bar</descripcion>
+                <coordenadas>
+                    <longitud>-5.843077</longitud>
+                    <latitud>43.359275</latitud>
+                    <altitud unidad="metro">230</altitud>
+                </coordenadas>
+                <distancia unidad="metro">450</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/cafebargoya.jpg"/>
+                    <foto ruta="img/cafebargoya2.jpg"/>
+                </galeriaFotos>
+            </hito>
+        </hitos>
+    </ruta>
+
+    <ruta nombre="Ruta gastronómica por Oviedo">
+        <tipo>Gastronómica</tipo>
+        <transporte>A pie</transporte>
+        <fechaInicio>2019-12-12</fechaInicio>
+        <hora>13:00:00</hora>
+        <duracion>3 horas</duracion>
+        <agencia>Sin agencia</agencia>
+		<descripcion>Ruta gastronómica por los restaurantes más relevantes de Oviedo</descripcion>
+        <publico>Solo adultos</publico>
+        <lugarInicio>Oviedo</lugarInicio>
+        <calleInicio>Calle Manuel Pedregal</calleInicio>
+        <coordenadas>
+            <longitud>-5.85170567</longitud>
+            <latitud>43.36623329</latitud>
+            <altitud unidad="metro">233</altitud>
+        </coordenadas>
+        <referencias>
+            <referencia>https://www.oviedo.es/</referencia>
+            <referencia>https://es.wikipedia.org/wiki/Oviedo</referencia>
+            <referencia>https://www.tripadvisor.es/Restaurants-g187452-Oviedo_Asturias.html</referencia>
+        </referencias>
+        <recomendacion>8</recomendacion>
+        <hitos>
+            <hito nombre="Secreto a Voces">
+                <descripcion>Bar restaurante</descripcion>
+                <coordenadas>
+                    <longitud>-5.85234135</longitud>
+                    <latitud>43.36635223</latitud>
+                    <altitud unidad="metro">233</altitud>
+                </coordenadas>
+                <distancia unidad="metro">10</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/secretoavoces.jpg"/>
+                    <foto ruta="img/secretoavoces2.jpg"/>
+                </galeriaFotos>
+            </hito>
+
+            <hito nombre="La Pepita Burger Bar">
+                <descripcion>Hamburguesería</descripcion>
+                <coordenadas>
+                    <longitud>-5.85308701</longitud>
+                    <latitud>43.3660071</latitud>
+                    <altitud unidad="metro">236</altitud>
+                </coordenadas>
+                <distancia unidad="metro">70</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/lapepitaburgerbar.jpg"/>
+                    <foto ruta="img/lapepitaburgerbar2.jpg"/>
+                </galeriaFotos>
+                <galeriaVideos>
+                    <video ruta="https://www.youtube.com/watch?v=ItfYH0h8d8s"/>
+                </galeriaVideos>
+            </hito>
+
+            <hito nombre="Plan A">
+                <descripcion>Bar restaurante</descripcion>
+                <coordenadas>
+                    <longitud>-5.85345984</longitud>
+                    <latitud>43.36613969</latitud>
+                    <altitud unidad="metro">235</altitud>
+                </coordenadas>
+                <distancia unidad="metro">450</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/planArestaurante.jpg"/>
+                    <foto ruta="img/planArestaurante2.jpg"/>
+                </galeriaFotos>
+            </hito>
+        </hitos>
+    </ruta>
+
+    <ruta nombre="Ruta por los pueblos de Asturias">
+        <tipo>Paisajística</tipo>
+        <transporte>Automóvil</transporte>
+        <fechaInicio>2019-02-28</fechaInicio>
+        <hora>09:00:00</hora>
+        <duracion>10 horas</duracion>
+        <agencia>NaturAller</agencia>
+        <descripcion>Ruta por algunos de los pueblos más bonitos de Asturias</descripcion>
+        <publico>Se puede ir con niños</publico>
+        <lugarInicio>Gijón</lugarInicio>
+        <calleInicio>Calle Ezcurdia</calleInicio>
+        <coordenadas>
+            <longitud>-5.65541089</longitud>
+            <latitud>43.54061396</latitud>
+            <altitud unidad="metro">15</altitud>
+        </coordenadas>
+        <referencias>
+            <referencia>https://www.asturias.es/</referencia>
+            <referencia>https://www.turismoasturias.es/descubre/costa/villas-marineras/marinera-lastres</referencia>
+            <referencia>https://www.colunga.es/</referencia>
+            <referencia>https://www.ribadesella.es/es</referencia>
+        </referencias>
+        <recomendacion>9</recomendacion>
+        <hitos>
+            <hito nombre="Lastres">
+                <descripcion>Concejo de la comunidad autónoma del Principado de Asturias</descripcion>
+                <coordenadas>
+                    <longitud>-5.26955366</longitud>
+                    <latitud>43.51664963</latitud>
+                    <altitud unidad="metro">119</altitud>
+                </coordenadas>
+                <distancia unidad="kilometro">41,8</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/lastres.jpg"/>
+                    <foto ruta="img/lastres2.jpg"/>
+                </galeriaFotos>
+                <galeriaVideos>
+                    <video ruta="https://www.youtube.com/watch?v=3gnXWgmWc4s"/>
+                </galeriaVideos>
+            </hito>
+
+            <hito nombre="Colunga">
+                <descripcion>Concejo de la comunidad autónoma del Principado de Asturias</descripcion>
+                <coordenadas>
+                    <longitud>-5.26992917</longitud>
+                    <latitud>43.4858708</latitud>
+                    <altitud unidad="metro">19</altitud>
+                </coordenadas>
+                <distancia unidad="kilometro">4</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/colunga.jpg"/>
+                    <foto ruta="img/colunga2.jpg"/>
+                </galeriaFotos>
+                <galeriaVideos>
+                    <video ruta="https://www.youtube.com/watch?v=CQm7DU76sQA"/>
+                </galeriaVideos>
+            </hito>
+
+            <hito nombre="Ribadesella">
+                <descripcion>Concejo de Asturias que limita al norte con el mar Cantábrico y al este con Llanes</descripcion>
+                <coordenadas>
+                    <longitud>-5.05926847</longitud>
+                    <latitud>43.46280168</latitud>
+                    <altitud unidad="metro">13</altitud>
+                </coordenadas>
+                <distancia unidad="kilometro">20,4</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/ribadesella.jpg"/>
+                    <foto ruta="img/ribadesella2.jpg"/>
+                </galeriaFotos>
+                <galeriaVideos>
+                    <video ruta="https://www.youtube.com/watch?v=fWgjmn_64V4"/>
+                </galeriaVideos>
+            </hito>
+        </hitos>
+    </ruta>
+
+    <ruta nombre="Ruta por los museos de Asturias">
+        <tipo>Museos</tipo>
+        <transporte>Automóvil</transporte>
+        <fechaInicio>2019-03-22</fechaInicio>
+        <hora>11:00:00</hora>
+        <duracion>8 horas</duracion>
+        <agencia>NaturAller</agencia>
+        <descripcion>Ruta por los museos principales de Asturias</descripcion>
+        <publico>Se puede ir con niños</publico>
+        <lugarInicio>Oviedo</lugarInicio>
+        <calleInicio>Calle San Francisco</calleInicio>
+        <coordenadas>
+            <longitud>-5.84626615</longitud>
+            <latitud>43.36210129</latitud>
+            <altitud unidad="metro">236</altitud>
+        </coordenadas>
+        <referencias>
+            <referencia>https://www.asturias.es/</referencia>
+            <referencia>http://www.museobbaa.com/</referencia>
+            <referencia>http://www.museojurasicoasturias.com/</referencia>
+            <referencia>https://museos.gijon.es/page/5284-museo-del-ferrocarril-de-asturias</referencia>
+        </referencias>
+        <recomendacion>9</recomendacion>
+        <hitos>
+            <hito nombre="Museo Bellas Artes de Oviedo">
+                <descripcion>El museo de arte más importante de Asturias, ocupando tres históricos edificios de la ciudad de Oviedo</descripcion>
+                <coordenadas>
+                    <longitud>-5.84440202</longitud>
+                    <latitud>43.36191798</latitud>
+                    <altitud unidad="metro">242</altitud>
+                </coordenadas>
+                <distancia unidad="metro">110</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/museobellasartesoviedo.jpg"/>
+                    <foto ruta="img/museobellasartesoviedo2.jpg"/>
+                </galeriaFotos>
+                <galeriaVideos>
+                    <video ruta="https://www.youtube.com/watch?v=zJE553m5q3g"/>
+                </galeriaVideos>
+            </hito>
+
+            <hito nombre="Museo del Ferrocarril de Gijón">
+                <descripcion>Es un gran complejo museístico situado en la ciudad de Gijón y uno de los más importantes de Europa</descripcion>
+                <coordenadas>
+                    <longitud>-5.67343533</longitud>
+                    <latitud>43.54099698</latitud>
+                    <altitud unidad="metro">3</altitud>
+                </coordenadas>
+                <distancia unidad="kilometro">29,5</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/museoferrocarrilgijon.jpg"/>
+                    <foto ruta="img/museoferrocarrilgijon2.jpg"/>
+                </galeriaFotos>
+                <galeriaVideos>
+                    <video ruta="https://www.youtube.com/watch?v=xdupWvSjq1o"/>
+                </galeriaVideos>
+            </hito>
+
+            <hito nombre="Museo Jurásico de Asturias">
+                <descripcion>Un pequeño museo paleontólogico español que se encuentra aislado en la rasa costera de San Telmo</descripcion>
+                <coordenadas>
+                    <longitud>-5.27426898</longitud>
+                    <latitud>43.50104816</latitud>
+                    <altitud unidad="metro">163</altitud>
+                </coordenadas>
+                <distancia unidad="kilometro">51,7</distancia>
+                <galeriaFotos>
+                    <foto ruta="img/muja.jpg"/>
+                    <foto ruta="img/muja2.jpg"/>
+                </galeriaFotos>
+                <galeriaVideos>
+                    <video ruta="https://www.youtube.com/watch?v=T-3RLUeJnyE"/>
+                </galeriaVideos>
+            </hito>
+        </hitos>
+    </ruta>
+</rutas>

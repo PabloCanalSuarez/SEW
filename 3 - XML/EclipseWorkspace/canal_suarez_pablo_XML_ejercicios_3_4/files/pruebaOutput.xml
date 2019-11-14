@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rutas>
+    <ruta>
+        <calleInicio>Estacion de Autobuses</calleInicio>
+        <descripcion>Ruta en la que se podran degustar las diferentes comidas
+			de la cuenca del nalon parte de gozar de los preciosos paisajes de
+			las montañas que la rodean</descripcion>
+        <duracion>7 horas</duracion>
+        <hitos>
+            <hito>
+                <coordenada>
+                    <altitud>155.0</altitud>
+                    <latitud>43.295387</latitud>
+                    <longitud>-5.681422</longitud>
+                </coordenada>
+                <descripcion>Parque de sama que es bastante bonito y pequeño
+				</descripcion>
+                <distancia>0.0</distancia>
+            </hito>
+            <hito>
+                <coordenada>
+                    <altitud>227.0</altitud>
+                    <latitud>43.287829</latitud>
+                    <longitud>-5.650454</longitud>
+                </coordenada>
+                <descripcion>Un museo en el que podras ver cantidad de maquinaria
+					usada en la mineria e industria que tanto se explotó en Asturias y
+					ver como eran las minas</descripcion>
+                <distancia>2.9</distancia>
+            </hito>
+            <hito>
+                <coordenada>
+                    <altitud>355.0</altitud>
+                    <latitud>43.233926</latitud>
+                    <longitud>-5.496153</longitud>
+                </coordenada>
+                <descripcion>Lugar para contemplar el rio Nalón</descripcion>
+                <distancia>16.1</distancia>
+            </hito>
+        </hitos>
+        <hora>10:00</hora>
+        <lugarInicio>La Felguera</lugarInicio>
+        <nombre>Ruta por cuenca del Nalón</nombre>
+        <recomendacion>8</recomendacion>
+        <tipo>Gastronómica</tipo>
+        <transporte>Coche</transporte>
+    </ruta>
+    <ruta>
+        <calleInicio>Aparcamiento del museo</calleInicio>
+        <descripcion>Primero se visitara el museo para posteriormente ir
+			andando a la playa cercana con un guia que ira
+			explicando datos relativos a la epoca de los dinosaurios en Asturias
+		</descripcion>
+        <duracion>3 horas</duracion>
+        <hitos>
+            <hito>
+                <coordenada>
+                    <altitud>163.0</altitud>
+                    <latitud>-5.273975</latitud>
+                    <longitud>43.501351</longitud>
+                </coordenada>
+                <descripcion>Museo donde se comienza la ruta</descripcion>
+                <distancia>0.0</distancia>
+            </hito>
+            <hito>
+                <coordenada>
+                    <altitud>4.0</altitud>
+                    <latitud>-5.261519</latitud>
+                    <longitud>43.501543</longitud>
+                </coordenada>
+                <descripcion>Playa en la que se encuentran indicios de que hubo
+					dinosaurios</descripcion>
+                <distancia>2.4</distancia>
+            </hito>
+            <hito>
+                <coordenada>
+                    <altitud>4.0</altitud>
+                    <latitud>-5.255353</latitud>
+                    <longitud>43.500468</longitud>
+                </coordenada>
+                <descripcion>Zona Exacta donde se encuentran Icnitas de Dinosaurios
+				</descripcion>
+                <distancia>0.4</distancia>
+            </hito>
+        </hitos>
+        <hora>11:00</hora>
+        <lugarInicio>Museo Muja</lugarInicio>
+        <nombre>Ruta De Dinosaurios</nombre>
+        <recomendacion>9</recomendacion>
+        <tipo>Historica</tipo>
+        <transporte>Andando</transporte>
+    </ruta>
+</rutas>

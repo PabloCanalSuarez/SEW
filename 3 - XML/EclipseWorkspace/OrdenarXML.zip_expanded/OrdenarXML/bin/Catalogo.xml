@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<catalogo>
+    <libro>
+        <titulo>Persona Normal</titulo>
+        <autor>Benito Pérez Galdós</autor>
+        <precio>19.99</precio>
+        <sinopsis>Desde que el tío Paco se hizo cargo de él, 
+        Sebastián ha vivido aventuras increíbles: tuvo un 
+        encuentro inesperado con un enorme felino, consiguió 
+        un mapa estelar para un pobre extraterrestre perdido 
+        en la Tierra, sobrevivió el embate de un enorme monstruo 
+        marino, peleó al lado de los sioux para defender su 
+        territorio de los colonizadores… ¿Qué pasa con Sebastián? 
+        ¿Acaso no es una «persona normal»?</sinopsis>
+    </libro>
+    <libro>
+        <titulo>Otoños y otras luces</titulo>
+        <autor>Ángel González</autor>
+        <precio>15.75</precio>
+        <sinopsis>¿Qué pasa por la cabeza de un hombre que rozando
+         ya los ochenta años siente cercano el final de su vida? 
+         ¿En qué momento aparece el desánimo (si aparece) o la 
+         lucidez de sentir acabarse el tiempo prestado? ¿Cómo afecta
+          al hombre y su conducta? La mente ajena es inexpugnable, 
+        inescrutable e inaccesible para los demás. Sólo conoceremos
+          qué sucede dentro de ella si su propietario decide contarlo.
+          Y si quien lo cuenta es escritor y poeta puede suceder, 
+          como es el caso, que surja el libro Otoños y otras luces; 
+          y que el poeta se llame Ángel González, fallecido en enero de 2008.</sinopsis>
+    </libro>
+    <libro>
+        <titulo>El capitán salió a comer y los marineros tomaron el barco</titulo>
+        <autor>Charles Bukowski</autor>
+        <precio>10.09</precio>
+        <sinopsis>El libro es un diario de los últimos meses de su vida,
+         cuajado de reflexiones hechas desde la cima de su experiencia.
+          Todo ha cambiado para seguir igual; Bukowski vive en una casa cómoda,
+           con piscina y jacuzzi y un buen coche en el garaje, pero la desesperación
+            es la misma: «No sé lo que le pasará a otra gente, pero yo, cuando me agacho
+             para ponerme los zapatos por la mañana, pienso: Ah, Dios mío, ¿y ahora qué?.
+             Estoy jodido por la vida, no nos entendemos. Tengo que darle bocados pequeños,
+             no engullirla toda. Es como tragar cubos de mierda. Nunca me sorprende que los 
+             manicomios y las cárceles estén llenos, y que las calles estén llenas...» 
+             Charles Bukowski conocía el único secreto que merece ser conocido: 
+             que lo único que importa es que nada tiene importancia.</sinopsis>
+    </libro>
+    <libro>
+        <titulo>La voz de las espadas</titulo>
+        <autor>Joe Abercrombie</autor>
+        <precio>17.90</precio>
+        <sinopsis>El inquisidor Glokta, convertido en un cínico tullido tras 
+        su paso por las cárceles de los enemigos de la Unión, es ahora a 
+        su vez un eficaz torturador capaz de extraer cualquier información 
+        de un criminal o de quien decidan sus superiores¿ El capitán Jezal 
+        dan Luthar no ha hecho en su vida nada más peligroso que desplumar 
+        a sus amigos jugando a las cartas y soñar con la gloria de vencer 
+        en el certamen de esgrima. Pero se está fraguando una guerra, y en 
+        los campos de batalla del Norte la lucha se rige por normas mucho más 
+        sangrientas... 
+        Logen Nuevededos, infame bárbaro de pasado sangriento, acaba de perder 
+        a sus amigos y está decidido a abandonar sus tierras y dirigirse al sur, 
+        pero los espíritus le advierten que le busca un Mago de los Viejos Tiempos 
+        ¿Sus historias se entrelazan en una fantasía negra repleta de acción y personajes memorables.</sinopsis>
+    </libro>
+    <libro>
+        <titulo>La verdad sobre el caso Harry Quebert</titulo>
+        <autor>Joël Dicker</autor>
+        <precio>20.90</precio>
+        <sinopsis>La verdad sobre el caso Harry Quebert, de Joël Dicker, 
+        es una novela de suspense a tres tiempos -1975, 1998 y 2008- acerca
+         del asesinato de una joven de quince años en la pequeña ciudad de Aurora,
+          en New Hampshire. Quién mató a Nola Kellergan es la gran incógnita a 
+          desvelar en esta incomparable historia policiaca de la narrativa extranjera,
+           cuya experiencia de lectura escapa a cualquier intento de descripción.</sinopsis>
+    </libro>
+</catalogo_libros>

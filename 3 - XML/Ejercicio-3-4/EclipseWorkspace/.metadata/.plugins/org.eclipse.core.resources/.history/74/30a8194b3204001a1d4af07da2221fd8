@@ -1,0 +1,146 @@
+package Ejercicio_3.app.logic;
+
+import java.time.LocalTime;
+
+import javax.xml.bind.annotation.XmlElement;
+
+public class Ruta {
+
+	private String nombre;
+	private String tipo;
+	private String transporte;
+	private String fechaInicio;
+	private LocalTime hora;
+	private String duracion;
+	private String descripcion;
+	private String publico;
+	private String lugarInicio;
+	private String calleInicio;
+	private String recomendacion;
+	private Coordenadas coordenadas;
+	private Referencias referencias;
+	private Hitos hitos;
+	
+	
+	@XmlElement
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getTipo() {
+		return tipo;
+	}
+
+	@XmlElement
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+
+	public String getTransporte() {
+		return transporte;
+	}
+
+	@XmlElement
+	public void setTransporte(String transporte) {
+		this.transporte = transporte;
+	}
+
+	public String getFechaInicio() {
+		return fechaInicio;
+	}
+
+	@XmlElement
+	public void setFechaInicio(String fechaInicio) {
+		this.fechaInicio = fechaInicio;
+	}
+
+	public LocalTime getHora() {
+		return hora;
+	}
+
+	@XmlElement
+	public void setHora(LocalTime hora) {
+		this.hora = hora;
+	}
+
+	public String getDuracion() {
+		return duracion;
+	}
+
+	@XmlElement
+	public void setDuracion(String duracion) {
+		this.duracion = duracion;
+	}
+
+	public String getDescripcion() {
+		return descripcion;
+	}
+
+	@XmlElement
+	public void setDescripcion(String descripcion) {
+		this.descripcion = descripcion;
+	}
+
+	public String getPublico() {
+		return publico;
+	}
+
+	@XmlElement
+	public void setPersonasAdecuadas(String publico) {
+		this.publico = publico;
+	}
+
+	public String getLugarInicio() {
+		return lugarInicio;
+	}
+
+	@XmlElement
+	public void setLugarInicio(String lugarInicio) {
+		this.lugarInicio = lugarInicio;
+	}
+
+	public String getCalleInicio() {
+		return calleInicio;
+	}
+
+	@XmlElement
+	public void setCalleInicio(String calleInicio) {
+		this.calleInicio = calleInicio;
+	}
+
+	public Coordenadas getCoordenada() {
+		return coordenadas;
+	}
+
+	@XmlElement
+	public void setCoordenadas(Coordenadas coordenadas) {
+		this.coordenadas = coordenadas;
+	}
+
+	public Referencias getReferencias() {
+		return referencias;
+	}
+
+	@XmlElement
+	public void setReferencias(Referencias referencias) {
+		this.referencias = referencias;
+	}
+
+	public String getRecomendacion() {
+		return recomendacion;
+	}
+
+	@XmlElement
+	public void setRecomendacion(String recomendacion) {
+		this.recomendacion = recomendacion;
+	}
+
+	public Hitos getHitos() {
+		return hitos;
+	}
+
+	@XmlElement
+	public void setHitos(Hitos hitos) {
+		this.hitos = hitos;
+	}
+}

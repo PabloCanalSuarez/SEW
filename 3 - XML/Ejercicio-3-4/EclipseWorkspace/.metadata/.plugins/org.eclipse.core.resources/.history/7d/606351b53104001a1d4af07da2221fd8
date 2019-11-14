@@ -1,0 +1,22 @@
+package Ejercicio_3.app.logic;
+
+import java.time.LocalTime;
+
+public class Ruta {
+
+	private String nombre;
+	private String tipo;
+	private String transporte;
+	private String fecha;
+	private LocalTime hora;
+	private String duracion;
+	private String descripcion;
+	private String personasAdecuadas;
+	private String lugarInicio;
+	private String calleInicio;
+	private Coordenada coordenada;
+	private Bibliografia bibliografia;
+	private String recomendacion;
+	private Hitos hitos;
+	
+}

@@ -1,0 +1,20 @@
+package Ejercicio_3.app.logic;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.xml.bind.annotation.XmlElement;
+
+public class Hitos {
+
+	private List<HitoElement> hitos = new ArrayList<HitoElement>();
+	
+	public List<HitoElement> getHitos() {
+		return hitos;
+	}
+
+	@XmlElement(name = "hito")
+	public void setHitos(List<HitoElement> hitos) {
+		this.hitos = hitos;
+	}
+}

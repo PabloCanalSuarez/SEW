@@ -1,0 +1,114 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT rutas (ruta, ruta, ruta, ruta, ruta, ruta*)>
+<!ATTLIST rutas
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT ruta (tipo,transporte,fechaInicio,hora,duracion,agencia,
+                descripcion,publico,lugarInicio,calleInicio,coordenadas,
+                referencias,recomendacion,hitos)>
+<!ATTLIST ruta
+  xmlns CDATA #FIXED ''
+  nombre CDATA #REQUIRED>
+
+<!ELEMENT tipo (#PCDATA)>
+<!ATTLIST tipo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT transporte (#PCDATA)>
+<!ATTLIST transporte
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT fechaInicio (#PCDATA)>
+<!ATTLIST fechaInicio
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT hora (#PCDATA)>
+<!ATTLIST hora
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT duracion (#PCDATA)>
+<!ATTLIST duracion
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT agencia (#PCDATA)>
+<!ATTLIST agencia
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT publico (#PCDATA)>
+<!ATTLIST publico
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT lugarInicio (#PCDATA)>
+<!ATTLIST lugarInicio
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT calleInicio (#PCDATA)>
+<!ATTLIST calleInicio
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT referencias (referencia, referencia, referencia, referencia*)>
+<!ATTLIST referencias
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT recomendacion (#PCDATA)>
+<!ATTLIST recomendacion
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT hitos (hito)+>
+<!ATTLIST hitos
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT referencia (#PCDATA)>
+<!ATTLIST referencia
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT hito (descripcion,coordenadas,distancia,galeriaFotos,
+                galeriaVideos?)>
+<!ATTLIST hito
+  xmlns CDATA #FIXED ''
+  nombre CDATA #REQUIRED>
+
+<!ELEMENT distancia (#PCDATA)>
+<!ATTLIST distancia
+  xmlns CDATA #FIXED ''
+  unidad NMTOKEN #REQUIRED>
+
+<!ELEMENT galeriaFotos (foto,foto?,foto?,foto?,foto?)>
+<!ATTLIST galeriaFotos
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT galeriaVideos (video?,video?,video?)>
+<!ATTLIST galeriaVideos
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT foto EMPTY>
+<!ATTLIST foto
+  xmlns CDATA #FIXED ''
+  ruta CDATA #REQUIRED>
+
+<!ELEMENT video EMPTY>
+<!ATTLIST video
+  xmlns CDATA #FIXED ''
+  ruta CDATA #REQUIRED>
+
+<!ELEMENT descripcion (#PCDATA)>
+<!ATTLIST descripcion
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT coordenadas (longitud,latitud,altitud)>
+<!ATTLIST coordenadas
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT longitud (#PCDATA)>
+<!ATTLIST longitud
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT latitud (#PCDATA)>
+<!ATTLIST latitud
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT altitud (#PCDATA)>
+<!ATTLIST altitud
+  xmlns CDATA #FIXED ''
+  unidad NMTOKEN #REQUIRED>
