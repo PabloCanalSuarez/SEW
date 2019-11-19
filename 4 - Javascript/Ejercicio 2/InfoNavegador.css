@@ -1,0 +1,23 @@
+body{
+    background-color:#F3F2F4;
+    color:black;
+}
+h1{
+    text-align:center;
+    color:#093145;
+}
+h2{
+    text-align:center;
+    color:#93A661;
+}
+h3{
+    text-align:center;
+    color:blue;
+}
+h4{
+    text-align:center;
+    color:black;
+}
+p{
+    color:gray;
+}
