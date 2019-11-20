@@ -8,13 +8,23 @@ class Calculadora {
     //if memory != 0, adds one to the memory value
     saveMemPlus()
     {
-        this.memory += eval(document.getElementById("result").value)
+        try{
+            this.memory += eval(document.getElementById("result").value)
+        } catch(e){
+            alert(e.message)
+            this.clr()
+        }
     }
     
     //performs the operation memory-1
     saveMemMinus()
     {
-        this.memory -= eval(document.getElementById("result").value)
+        try{
+            this.memory -= eval(document.getElementById("result").value)
+        } catch(e){
+            alert(e.message)
+            this.clr()
+        }
     }
     
     //displays the memory value
@@ -35,8 +45,13 @@ class Calculadora {
     solve() 
     { 
         let x = document.getElementById("result").value 
-        let y = eval(x) 
-        document.getElementById("result").value = y 
+        try{
+            let y = eval(x) 
+            document.getElementById("result").value = y 
+        } catch(e){
+            alert(e.message)
+            this.clr()
+        }
     } 
     
     //clears the display 
