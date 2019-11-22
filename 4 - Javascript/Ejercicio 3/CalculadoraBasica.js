@@ -9,10 +9,12 @@ class Calculadora {
     saveMemPlus()
     {
         try{
-            this.memory += eval(document.getElementById("result").value)
+            let x = document.getElementById("result").value;
+            let m = this.memory;
+            this.memory = eval(m) + eval(x);
         } catch(e){
-            alert(e.message)
-            this.clr()
+            alert(e.message);
+            this.clr();
         }
     }
     
@@ -20,10 +22,12 @@ class Calculadora {
     saveMemMinus()
     {
         try{
-            this.memory -= eval(document.getElementById("result").value)
+            let x = document.getElementById("result").value;
+            let m = this.memory;
+            this.memory = eval(m) - eval(x);
         } catch(e){
-            alert(e.message)
-            this.clr()
+            alert(e.message);
+            this.clr();
         }
     }
     

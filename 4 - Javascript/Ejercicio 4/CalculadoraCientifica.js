@@ -9,10 +9,12 @@ class Calculadora {
     saveMemPlus()
     {
         try{
-            this.memory += eval(document.getElementById("result").value)
+            let x = document.getElementById("result").value;
+            let m = this.memory;
+            this.memory = eval(m) + eval(x);
         } catch(e){
-            alert(e.message)
-            this.clr()
+            alert(e.message);
+            this.clr();
         }
     }
     
@@ -20,10 +22,12 @@ class Calculadora {
     saveMemMinus()
     {
         try{
-            this.memory -= eval(document.getElementById("result").value)
+            let x = document.getElementById("result").value;
+            let m = this.memory;
+            this.memory = eval(m) - eval(x);
         } catch(e){
-            alert(e.message)
-            this.clr()
+            alert(e.message);
+            this.clr();
         }
     }
     
@@ -31,26 +35,26 @@ class Calculadora {
     showMemory()
     {
         if(this.memory != 0){
-            this.dis(this.memory)
+            this.dis(this.memory);
         } 
     }
     
     //display value 
     dis(val) 
     { 
-        document.getElementById("result").value+=val
+        document.getElementById("result").value+=val;
     } 
     
     //evaluates the expression and returns result 
     solve() 
     { 
-        let x = document.getElementById("result").value 
+        let x = document.getElementById("result").value; 
         try{
-            let y = eval(x) 
-            document.getElementById("result").value = y 
+            let y = eval(x);
+            document.getElementById("result").value = y;
         } catch(e){
-            alert(e.message)
-            this.clr()
+            alert(e.message);
+            this.clr();
         }
     } 
     
@@ -62,33 +66,116 @@ class Calculadora {
 }
 
 class CalculadoraCientifica extends Calculadora {
+    clearMemory() {
+        this.memory = 0;
+    }
+
+    saveMemDisplay() {
+        this.memory = document.getElementById("result").value;
+    }
+
     showDisplay(val) {
-        document.getElementById("result").value = val
-    }
-
-    sin() {
-        let x = Math.sin(document.getElementById("result").value)
-        this.showDisplay(x)
-    }
-
-    cos() {
-        let x = Math.cos(document.getElementById("result").value)
-        this.showDisplay(x)
-    }
-
-    tan() {
-        let x = Math.tan(document.getElementById("result").value)
-        this.showDisplay(x)
+        document.getElementById("result").value = val;
     }
 
     xp2() {
         try{
-            let disp = document.getElementById("result").value
-            let x = eval(disp) * eval(disp)
+            let disp = document.getElementById("result").value;
+            let x = eval(disp) * eval(disp);
             this.showDisplay(x)
         } catch(e){
-            alert(e.message)
-            this.clr()
+            alert(e.message);
+            this.clr();
+        }
+    }
+
+    sin() {
+        let x = Math.sin(document.getElementById("result").value);
+        this.showDisplay(x);
+    }
+
+    cos() {
+        let x = Math.cos(document.getElementById("result").value);
+        this.showDisplay(x);
+    }
+
+    tan() {
+        let x = Math.tan(document.getElementById("result").value);
+        this.showDisplay(x);
+    }
+
+    xp3() {
+        try{
+            let disp = document.getElementById("result").value;
+            let x = eval(disp) * eval(disp) * eval(disp);
+            this.showDisplay(x)
+        } catch(e){
+            alert(e.message);
+            this.clr();
+        }
+    }
+    
+    tenXp() {
+        try{
+            let disp = document.getElementById("result").value;
+            let x = 10**eval(disp);
+            this.showDisplay(x)
+        } catch(e){
+            alert(e.message);
+            this.clr();
+        }
+    }
+
+    log() {
+        let x = Math.log(document.getElementById("result").value);
+        this.showDisplay(x);
+    }
+
+    squareRoot() {
+        let x = Math.sqrt(document.getElementById("result").value);
+        this.showDisplay(x);
+    }
+
+    changeSign() {
+        try {
+            let val = eval(document.getElementById("result").value);
+            document.getElementById("result").value = eval(-val);
+        } catch(e){
+            alert(e.message);
+            this.clr();
+        }
+    }
+
+    deleteLast() {
+        let x = document.getElementById("result").value;
+        document.getElementById("result").value = x.substring(0, x.length-1);
+    }
+
+    factorial() {
+        let x = document.getElementById("result").value;
+        document.getElementById("result").value = this.factorialRecursivo(x);
+    }
+
+    factorialRecursivo(n) {
+        try {
+            if (n === 0) {
+                return 1;
+            }
+            return n * this.factorialRecursivo(n - 1);
+        } catch (e) {
+            return Infinity;
+        }
+    }
+
+    clrE() {
+        const display = document.getElementById("result");
+        const limit = display.value.length - 1;
+        for (let i = limit; i >= 0; i--) {
+            let value = display.value[i];
+            if (/^([^0-9]*)$/.test(value)) {
+                display.value = display.value.substring(0, i);
+                break;
+            }
         }
     }
 }
