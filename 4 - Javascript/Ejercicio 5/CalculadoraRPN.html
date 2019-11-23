@@ -1,21 +1,21 @@
 <html> 
 <head> 
     <meta charset="UTF-8">
-    <title>CalculadoraBasica</title>
-    <link rel="stylesheet" href="CalculadoraBasica.css" />
-    <script src="CalculadoraBasica.js"></script>
+    <title>CalculadoraRPN</title>
+    <link rel="stylesheet" href="Calculadora.css" />
+    <script src="Calculadora.js"></script>
 </head> 
 
 <body> 
-	<h2>Calculadora básica</h2>
+	<h1>Calculadora RPN</h1>
 	<table class="Calculadora" border="1"> 
 		<tr> 
 			<td colspan="4"><input type="text" id="result" disabled/></td> 	
 		</tr> 
 		<tr> 
-			<td><input type="button" class="m" value="mrc" onclick="calculadora.showMemory()"/> </td> 
-			<td><input type="button" class="m" value="m-" onclick="calculadora.saveMemMinus()"/> </td> 
-			<td><input type="button" class="m" value="m+" onclick="calculadora.saveMemPlus()"/> </td> 
+			<td><input type="button" class="op" value="sin" onclick="calculadora.sin()"/> </td> 
+			<td><input type="button" class="op" value="cos" onclick="calculadora.cos()"/> </td> 
+			<td><input type="button" class="op" value="tan" onclick="calculadora.tan()"/> </td> 
 			<td><input type="button" class="op" value="/" onclick="calculadora.dis('/')"/> </td> 
 		</tr> 
 		<tr> 
@@ -37,12 +37,12 @@
 			<td><input type="button" class="op" value="+" onclick="calculadora.dis('+')"/> </td> 
 		</tr> 
 		<tr> 
-			<td><input type="button" value="0" onclick="calculadora.dis('0')"/> </td> 
-			<td><input type="button" value="." onclick="calculadora.dis('.')"/> </td> 
+			<td><input type="button" class="num" value="0" onclick="calculadora.dis('0')"/> </td> 
+			<td><input type="button" class="num" value="." onclick="calculadora.dis('.')"/> </td> 
 			<!-- boton clear -->
-			<td><input type="button" value="C" onclick="calculadora.clr()"/> </td> 
+			<td><input type="button" class="num" value="C" onclick="calculadora.clr()"/> </td> 
 			<!-- boton resolver -->
-			<td><input type="button" class="op" value="=" onclick="calculadora.solve()"/> </td> 
+			<td><input type="button" class="ent" value="ENT" onclick="calculadora.enter()"/> </td> 
 		</tr> 
 	</table> 
 </body> 
