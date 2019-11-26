@@ -17,16 +17,17 @@
 h1{
     font-size: 20px;
 }
-#result {
-    margin-top: 30px;
-    margin-bottom: 20px;
+#result, #stack {
     width: 200px;
     height: 30px;
     border: 1px solid white;
     text-align: right;
     font: 20px bold;
     background-color: rgba(199, 245, 130, 0.616);
-  }
+}
+#stack {
+    text-align: left;
+}
 input[type="button"] {
     border-radius: 0.5em;
     width: 40px;
