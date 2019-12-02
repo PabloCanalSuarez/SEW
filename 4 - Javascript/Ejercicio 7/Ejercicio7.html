@@ -31,29 +31,23 @@
 		<input type="button"  value="Cambiar ciudad Gijón" onclick="web.cambiarCiudadGijon()"/>
 		<input type="button"  value="Cambiar ciudad Oviedo" onclick="web.cambiarCiudadOviedo()"/>
 
-		<!-- Tarea 2 -->
-		<h2>Tarea 2</h2>
-		<label>Tarea 3: Añadir nuevos elementos html</label>
-		<p>Etiqueta: <input type="text" id="tarea3Etiqueta"/>
-			Id: <input type="text" id="tarea3Id"/>
-			Contenido: <input type="text" id="tarea3Contenido"/>
-			<input type="button" value="Añadir" onclick="pagina.agregarElemento()"/>
-		</p>
+		<!-- Tareas 3 y 4 -->
+		<h2>Tareas 3 y 4</h2>
+		<p id="addElement">Este es el curso de Software y Estándares para la Web.</p>
+		<input type="button" value="Añadir párrafo" onclick="web.addParrafo()"/>
+		<input type="button" value="Eliminar párrafo" onclick="web.removeParrafo()"/>
 
-		<label>Tarea 4: Eliminar elementos html</label>
-		<p>Elemento:
-			<select id="tarea4"></select>
-			<input type="button" value="Eliminar" onclick="pagina.eliminarElemento()"/>
-		</p>
-		<label>Tarea 5: Recorrer árbol DOM</label>
-		<input type="button" value="Mostrar" onclick="pagina.mostrarDom()"/>
+		<!-- Tarea 5 -->
+		<h2>Tarea 5</h2>
+		<input id="button" type="button" value="Recorrer DOM" onclick="web.runDOM()"/>
 
+		<!-- Tarea 6 -->
+		<h2>Tarea 6</h2>
 		<table id="myTable">
 			<tr>
 				<th>Millionaires</th>
 				<th>Estate (millions)</th>
 			</tr>
-			<tbody>
 			<tr>
 				<td class="text">Jeff Bezos</td>
 				<td class="num">124.700</td>
@@ -70,10 +64,10 @@
 				<td class="text">Amancio Ortega</td>
 				<td class="num">57.000</td>
 			</tr>
-			</tbody>
 		</table>
-		<button onclick="pagina.sumTable()">Calcular</button>
-		<section id="result">
+		<p id="resultadoSuma">Total: </p>
+		<input id="button" type="button" value="Suma" onclick="web.suma()"/>
+		<section id="DOMlog">
 
 		</section>
 	</body>

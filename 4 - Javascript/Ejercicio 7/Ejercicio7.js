@@ -46,6 +46,24 @@ class Web {
         $("#campoNombre").val("Oviedo");
     }
 
+    addParrafo(){
+        $("#addElement").after("<p id='modifyElement'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget molestie...</p>");
+    }
+
+    removeParrafo(){
+        $("#modifyElement").remove();
+    }
+
+    runDOM(){
+        $("*", document.body).each(function() {
+            var etiquetaPadre = $(this).parent()[0].tagName;
+            var etiquetaHijo = $(this)[0].tagName;
+            console.log(etiquetaPadre);
+            console.log(etiquetaHijo);
+            $("#DOMlog").append(document.createTextNode( "Etiqueta padre : <"  + etiquetaPadre + "> elemento : <" + $(this)[0].tagName +"> valor: "));
+        });
+    }
+
 
     añadirElemento(elemento) {
         this.coleccion.push(elemento);
@@ -67,72 +85,13 @@ class Web {
         $("select").append(cadena);
     }
 
-    modificarContenido() {
-        let id = $("#modificar option:selected").text();
-        for (let i = 0; i < this.coleccion.length; i++) {
-            if (this.coleccion[i].id === id) {
-                this.coleccion.valor = $("#contenido").val();
-                $("#" + id).html(this.coleccion.valor);
-                break;
-            }
-        }
-    }
-
-    agregarElemento() {
-        if (this.comprobarElemento()) {
-            this.añadirElemento(
-                new Elemento($("#tarea3Etiqueta").val(),
-                    $("#tarea3Id").val(),
-                    $("#tarea3Contenido").val())
-            );
-        } else
-            alert("Id repetido");
-    }
-
-    comprobarElemento() {
-        let id = $("#tarea3Id").val();
-        for (let i = 0; i < this.coleccion.length; i++) {
-            if (this.coleccion[i].id === id)
-                return false;
-        }
-        return true;
-    }
-
-    eliminarElemento(elemento) {
-        let id = $("#tarea4").val();
-        let i = this.coleccion.findIndex(i => i.id === id);
-        if (i !== -1) {
-            this.coleccion.splice(i, 1);
-            $("#" + id).remove();
-            $("select option[value='" + id + "']").remove();
-            $("input[value='" + id + "']").remove();
-        }
-    }
-
-    mostrarDom() {
-        let cadena = "";
-        $("*", document.body).each(function () {
-            let etiquetaPadre = $(this).parent().get(0).tagName;
-            cadena += "Etiqueta padre : " + etiquetaPadre + " elemento : "
-                + $(this).get(0).tagName + " valor: " + $(this).text() + "<br>";
-        });
-        pagina.añadirElemento(new Elemento("p", "dom", cadena));
-    }
-
-    mostrarInformacion(element) {
-        let etiquetaPadre = $(element).parent().get(0).tagName;
-        $(element).prepend(document.createTextNode("Etiqueta padre : <" + etiquetaPadre + "> elemento : <"
-            + $(element).get(0).tagName + "> valor: "));
-    }
-
-    sumTable() {
+    suma() {
         let result = 0;
-        const values = $('td');
+        const values = $("num");
         for (let i = 0; i < values.length; i++) {
-            result += parseFloat(values[i].innerHTML);
+            result += parseFloat(values[i].val());
         }
-        const text = 'La suma total es ' + result;
-        pagina.añadirElemento(new Elemento("h4", "suma", text));
+        $("#resultadoSuma").append(result);
     }
 }
 
