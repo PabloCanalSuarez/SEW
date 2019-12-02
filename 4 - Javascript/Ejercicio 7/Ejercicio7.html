@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Pablo Cañal Suárez - UO264903"/>
+		<title>Práctica 07 | Software y Estándares para la Web</title>
+		<link rel="stylesheet" href="Ejercicio7.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="Ejercicio7.js"></script>
+	</head>
+
+	<body>
+		<h1>Ejercicio 7</h1>
+
+		<!-- Tarea 1 -->
+		<h2>Tarea 1</h2>
+
+		<h3 class="ocultarMostrar">Este título se puede ocultar y mostrar</h2>
+		<pre class="ocultarMostrar"> 
+			Este párrafo se puede ocultar y mostrar.
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget molestie...
+		</pre>
+
+		<input type="button" value="Ocultar elementos" onclick="web.ocultarElemento()"/>
+		<input type="button" value="Mostrar elementos" onclick="web.mostrarElemento()"/> 
+
+		<!-- Tarea 2 -->
+		<h2>Tarea 2</h2>
+		<p id="campoTexto">Ciudad: <input type="text" id="campoNombre" value="Oviedo"></p>
+
+		<input type="button"  value="Cambiar ciudad Gijón" onclick="web.cambiarCiudadGijon()"/>
+		<input type="button"  value="Cambiar ciudad Oviedo" onclick="web.cambiarCiudadOviedo()"/>
+
+		<!-- Tarea 2 -->
+		<h2>Tarea 2</h2>
+		<label>Tarea 3: Añadir nuevos elementos html</label>
+		<p>Etiqueta: <input type="text" id="tarea3Etiqueta"/>
+			Id: <input type="text" id="tarea3Id"/>
+			Contenido: <input type="text" id="tarea3Contenido"/>
+			<input type="button" value="Añadir" onclick="pagina.agregarElemento()"/>
+		</p>
+
+		<label>Tarea 4: Eliminar elementos html</label>
+		<p>Elemento:
+			<select id="tarea4"></select>
+			<input type="button" value="Eliminar" onclick="pagina.eliminarElemento()"/>
+		</p>
+		<label>Tarea 5: Recorrer árbol DOM</label>
+		<input type="button" value="Mostrar" onclick="pagina.mostrarDom()"/>
+
+		<table id="myTable">
+			<tr>
+				<th>Millionaires</th>
+				<th>Estate (millions)</th>
+			</tr>
+			<tbody>
+			<tr>
+				<td class="text">Jeff Bezos</td>
+				<td class="num">124.700</td>
+			</tr>
+			<tr>
+				<td class="text">Bill Gates</td>
+				<td class="num">93.500</td>
+			</tr>
+			<tr>
+				<td class="text">Warren Buffett</td>
+				<td class="num">84.000</td>
+			</tr>
+			<tr>
+				<td class="text">Amancio Ortega</td>
+				<td class="num">57.000</td>
+			</tr>
+			</tbody>
+		</table>
+		<button onclick="pagina.sumTable()">Calcular</button>
+		<section id="result">
+
+		</section>
+	</body>
+</html>
