@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Pablo Cañal Suárez - UO264903"/>
+		<title>Ejercicio 9</title>
+		<link rel="stylesheet" href="Ejercicio9.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="Ejercicio9.js"></script>
+	</head>
+
+	<body>
+		<h1>Carga de datos meteorológicos de Oviedo con OpenWeatherMap (XML)</a></h1>   
+		<table id="table">
+			<tr>
+				<th>Ciudad</th>
+				<th>MeteoData</th>
+			</tr>
+			<tr>
+				<td><button id="Oviedo" onclick = "meteo.verXML('Oviedo')">XML Oviedo</button></td>
+				<td id="img1"></td>
+			</tr>
+			<tr>
+				<td><button id="Ribadesella" onclick = "meteo.verXML('Ribadesella')">XML Ribadesella</button></td>
+				<td id="img1"></td>
+			</tr>
+			<tr>
+				<td><button id="Gijon" onclick = "meteo.verXML('Gijon')">XML Gijon</button></td>
+				<td id="img1"></td>
+			</tr>
+			<tr>
+				<td><button id="Colunga" onclick = "meteo.verXML('Colunga')">XML Colunga</button></td>
+				<td id="img1"></td>
+			</tr>
+			<tr>
+				<td><button id="Aviles" onclick = "meteo.verXML('Aviles')">XML Aviles</button></td>
+				<td id="img1"></td>
+			</tr>
+		</table>
+	</body>
+	<section>
+	</section>
+</html>
