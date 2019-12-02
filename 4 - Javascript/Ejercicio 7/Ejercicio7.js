@@ -87,10 +87,10 @@ class Web {
 
     suma() {
         let result = 0;
-        const values = $("num");
-        for (let i = 0; i < values.length; i++) {
-            result += parseFloat(values[i].val());
-        }
+        $(".num").each(function(){
+            result += parseFloat(this.innerText)
+        });
+
         $("#resultadoSuma").append(result);
     }
 }
