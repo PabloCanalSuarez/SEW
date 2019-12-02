@@ -25,16 +25,8 @@ class CalculadoraRPN {
                 this.writeStack(x);
                 break;
             case "/":
-                x = this.stack.pop() / this.stack.pop();
-                this.stack.push(x);
-                this.clrStackLastTwo();
-                this.writeStack(x);
                 break;
             case "*":
-                x = this.stack.pop() * this.stack.pop();
-                this.stack.push(x);
-                this.clrStackLastTwo();
-                this.writeStack(x);
                 break;
             default:
                 document.getElementById("result").value += val;
@@ -69,42 +61,20 @@ class CalculadoraRPN {
     clrStackLastTwo() 
     { 
         let x = document.getElementById("stack").value;
-        this.clrStack();
-        const data = x.split("  ");
-        let newData = [];
-        
-        for(let i = 0; i < data.length - 3; i++){
-            newData[i] = data[i];
-        }
-
-        newData.forEach(e => {
-           this.writeStack(e)
-        });
-    }
-
-    clrStackLastOne() 
-    { 
-        let x = document.getElementById("stack").value;
-        this.clrStack();
-        const data = x.split("  ");
-        let newData = [];
-        
+        this.clr();
+        let data = x.split("  ");
+        let newData;
         for(let i = 0; i < data.length - 2; i++){
             newData[i] = data[i];
         }
-
-        newData.forEach(e => {
-           this.writeStack(e)
+        newData.forEach(element => {
+           document.getElementById("stack").value += element;
         });
-    }
-
-    clrStack() 
-    { 
-        document.getElementById("stack").value = "";
     }
     
     writeStack(val)
     {
+        console.log(val)
         document.getElementById("stack").value += (val + "  ");
     }
 
@@ -151,30 +121,6 @@ class CalculadoraRPN {
         for(i = 0; i < btns.length; i++){
             btns[i].disabled = bool;
         }
-    }
-
-    sin(){
-        let x = this.stack.pop();
-        let res = Math.sin(x).toString().substr(0,5);
-        console.log(res)
-        this.clrStackLastOne();
-        this.writeStack(eval(res));
-    }
-
-    cos(){
-        let x = this.stack.pop();
-        let res = Math.cos(x).toString().substr(0,5);
-        console.log(res)
-        this.clrStackLastOne();
-        this.writeStack(eval(res));
-    }
-
-    tan(){
-        let x = this.stack.pop();
-        let res = Math.tan(x).toString().substr(0,5);
-        console.log(res)
-        this.clrStackLastOne();
-        this.writeStack(eval(res));
     }
 }
 
