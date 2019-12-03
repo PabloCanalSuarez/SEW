@@ -1,6 +1,6 @@
 class Meteo {
     constructor(){
-        this.apikey = "47b790fd0fc41878c80c57c9846132cb";
+        this.apikey = "ab2ef82ab2a348abf1ad5c7351cc6041";
         this.ciudad = "Oviedo";
         this.codigoPais = "ES";
         this.unidades = "&units=metric";

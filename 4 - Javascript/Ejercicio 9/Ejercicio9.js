@@ -1,6 +1,6 @@
 class Meteo {
     constructor(){
-        this.apikey = "47b790fd0fc41878c80c57c9846132cb";
+        this.apikey = "ab2ef82ab2a348abf1ad5c7351cc6041";
         this.ciudad = "Oviedo";
         this.tipo = "&mode=xml";
         this.unidades = "&units=metric";
@@ -88,6 +88,21 @@ class Meteo {
                         stringDatos += "<li>Fecha de la medida: " + fechaMedidaLocal + "</li>";
                     
                     $("#p"+ciudad).html(stringDatos);
+                    setImage("#img"+ciudad, descripcion);
+
+                    function setImage(element, weather){
+                        // let weather = new String(desc);
+                        let src;
+                        if(weather.includes("nubes")){
+                            src = "cloud.png";
+                        } else if(weather.includes("cielo")) {
+                            src = "sun.png";
+                        } else if(weather.includes("lluvia")) {
+                            src = "sun_rain_cloud";
+                        }
+                        // document.getElementById(element).setAttribute("src", src);
+                        $(element).attr("src", src);
+                    }
                 },
             error:function(){
                 $("h3").html("Error: No se pudo obtener el XML."); 
@@ -106,12 +121,12 @@ class Meteo {
     }
     verXML(ciudadVal){
         this.changeURL(ciudadVal);
-
         this.addElement("h2","Información en XML de OpenWeather para "+this.ciudad,"section"); 
         this.addElement("h3",this.correcto,"section");
         this.addElement("h4","XML","section");
         this.addElement("pre","","section")
         this.addElement("h4","Datos","section");
+        this.addElement("img", "", "section");
         this.addElement("p","","section");
 
         this.cargarDatos();
