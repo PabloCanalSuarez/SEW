@@ -64,27 +64,6 @@ class Web {
         });
     }
 
-
-    añadirElemento(elemento) {
-        this.coleccion.push(elemento);
-        let cadena = "<" + elemento.etiqueta + " id='"
-            + elemento.id + "'>" + elemento.valor + "</"
-            + elemento.etiqueta + ">";
-        $("body").append(cadena);
-        this.añadirBotonElemento(elemento.id);
-        this.añadirComboBox(elemento.id);
-    }
-
-    añadirBotonElemento(id) {
-        let cadena = "<input type='button' value='" + id + "' onclick='pagina.pulsarBoton(\"" + id + "\")'/>";
-        $("#buttonGroup").append(cadena);
-    }
-
-    añadirComboBox(id) {
-        let cadena = "<option value=" + id + ">" + id + "</option>"
-        $("select").append(cadena);
-    }
-
     suma() {
         let result = 0;
         $(".num").each(function(){
