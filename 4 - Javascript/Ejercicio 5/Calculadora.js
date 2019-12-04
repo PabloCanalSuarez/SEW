@@ -3,8 +3,6 @@ class CalculadoraRPN {
     constructor(){
         this.memory = 0;
         this.stack = [];
-        // this.disableOperandButtons(true);
-        // this.disableOperandButtonsCientif(true);
     }
     
     //display value 
@@ -14,32 +12,23 @@ class CalculadoraRPN {
         switch(val){
             case "+":
                 x = this.stack.pop() + this.stack.pop();
-                this.stack.push(x);
-                this.clrStackLastTwo();
-                this.writeStack(x);
                 break;
             case "-":
                 x = this.stack.pop() - this.stack.pop();
-                this.stack.push(x);
-                this.clrStackLastTwo();
-                this.writeStack(x);
                 break;
             case "/":
                 x = this.stack.pop() / this.stack.pop();
-                this.stack.push(x);
-                this.clrStackLastTwo();
-                this.writeStack(x);
                 break;
             case "*":
                 x = this.stack.pop() * this.stack.pop();
-                this.stack.push(x);
-                this.clrStackLastTwo();
-                this.writeStack(x);
                 break;
             default:
                 document.getElementById("result").value += val;
                 break;
         }
+        this.stack.push(x);
+        this.clrStackLastTwo();
+        this.writeStack(x);
         this.evaluateStackLength();
     } 
     
