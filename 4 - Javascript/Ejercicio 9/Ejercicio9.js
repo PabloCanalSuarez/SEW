@@ -126,8 +126,8 @@ class Meteo {
         this.addElement("h4","XML","section");
         this.addElement("pre","","section")
         this.addElement("h4","Datos","section");
-        this.addElement("img", "", "section");
         this.addElement("p","","section");
+        this.addElement("img", "", "p");
 
         this.cargarDatos();
         $('#'+ciudadVal).attr("disabled","disabled");

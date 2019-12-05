@@ -26,7 +26,6 @@ h4{
     color:black;
 }
 p,ul,ol,dl,table {
-    font-family: Arial,Helvetica,'Times New Roman', Times, serif;
     font-size: 0.9em;
     color: #373d3f;
     border-radius: 0.5em;
@@ -36,7 +35,6 @@ p,ul,ol,dl,table {
 }
 
 th {
-    font-family: Arial,Helvetica,'Times New Roman', Times, serif;
     font-size: 0.9em;
     background-color:#107896;
     color:#f2f3f4;
@@ -45,4 +43,7 @@ th {
 
 td {
     text-align: center;
+}
+h1, h2, h3, h4, p,ul,ol,dl,table, th, td {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

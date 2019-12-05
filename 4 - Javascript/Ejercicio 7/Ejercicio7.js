@@ -1,32 +1,4 @@
-$(document).ready(function(){
-    $("#boton1").click(function(){
-        $("#parrafo1").text("Profesora: B. Cristina Pelayo García-Bustelo");
-        $("#sitioWeb").html("<a href='http://di002.edv.uniovi.es/~cris/'>B. Cristina Pelayo García-Bustelo</a>");
-        $("#campoTexto").html("Nombre de la profesora: <input type='text' id='campoNombre'>");
-        $("#campoNombre").val("B. Cristina");
-    });
-    $("#boton2").click(function(){
-        $("#parrafo1").text("Profesor: Juan Manuel Cueva Lovelle");
-        $("#sitioWeb").html("<a href='http://di002.edv.uniovi.es/~cueva/'>Juan Manuel Cueva Lovelle</a>");
-        $("#campoTexto").html("Nombre del profesor: <input type='text' id='campoNombre'>");
-        $("#campoNombre").val("Juan Manuel");
-    });
-});
-
-
-
-
 class Web {
-    constructor() {
-        // this.inicializar();
-    }
-
-    inicializar() {
-        this.coleccion = [];
-        this.añadirElemento(new Elemento("h1", "Titulo h1"));
-        this.añadirElemento(new Elemento("h2", "Titulo h2"));
-        this.añadirElemento(new Elemento("p", "Parrafo"));
-    }
 
     mostrarElemento(){
         $(".ocultarMostrar").show();
