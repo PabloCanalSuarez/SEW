@@ -88,21 +88,9 @@ class Meteo {
                         stringDatos += "<li>Fecha de la medida: " + fechaMedidaLocal + "</li>";
                     
                     $("#p"+ciudad).html(stringDatos);
-                    setImage("#img"+ciudad, descripcion);
-
-                    function setImage(element, weather){
-                        // let weather = new String(desc);
-                        let src;
-                        if(weather.includes("nubes")){
-                            src = "cloud.png";
-                        } else if(weather.includes("cielo")) {
-                            src = "sun.png";
-                        } else if(weather.includes("lluvia")) {
-                            src = "sun_rain_cloud";
-                        }
-                        // document.getElementById(element).setAttribute("src", src);
-                        $(element).attr("src", src);
-                    }
+                    var iconID = $('weather',datos).attr("icon");
+                    var iconSrc = "http://openweathermap.org/img/w/" + iconID + ".png"
+                    $("#img"+ciudad).attr("src", iconSrc);  
                 },
             error:function(){
                 $("h3").html("Error: No se pudo obtener el XML."); 
@@ -127,7 +115,7 @@ class Meteo {
         this.addElement("pre","","section")
         this.addElement("h4","Datos","section");
         this.addElement("p","","section");
-        this.addElement("img", "", "p");
+        this.addElement("img", "", "section");
 
         this.cargarDatos();
         $('#'+ciudadVal).attr("disabled","disabled");
