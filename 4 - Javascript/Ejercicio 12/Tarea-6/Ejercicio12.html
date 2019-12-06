@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 12 - Tarea 6</title>
+    <meta name="author" content="Pablo Cañal Suárez - UO264903"/>
+    <meta name="viewport" content="initial-scale=1.0"/>
+    <link rel="stylesheet" href="Ejercicio12.css" />
+    <script src="Ejercicio12.js"></script>
+</head>
+<body>
+    <h1>Mapa de Geolocalización del usuario</h1>
+    <h2>Escoja una de las siguientes ciudades</h2>
+    <table id="buttonsTable">
+        <tr>
+            <td><button id="btnOviedo" onclick="map.loadMarcador(this)">Oviedo</button><br/></td>
+            <td><button id="btnGijon" onclick="map.loadMarcador(this)">Gijón</button><br/></td>
+            <td><button id="btnColunga" onclick="map.loadMarcador(this)">Colunga</button><br/></td>
+            <td><button id="btnRibadesella" onclick="map.loadMarcador(this)">Ribadesella</button><br/></td>
+            <td><button id="btnSantander" onclick="map.loadMarcador(this)">Santander</button><br/></td>
+        </tr>
+    </table>
+    <div id="mapa"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXq-aaHMAMhmatBRRpVkRm_-O4yzPyN5A&callback=mapaGoogle.verMapa">
+    </script>
+</body>
+</html>
