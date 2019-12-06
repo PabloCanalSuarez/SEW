@@ -1,5 +1,5 @@
 var mapaGoogle = new Object();
-function verMapa() {
+function initMap() {
     var centro = { lat: 43.36335880146701, lng: -5.854131194383698 };
     var map = new google.maps.Map(document.getElementById('mapa'), {
         zoom: 8,
@@ -20,16 +20,4 @@ function verMapa() {
     }
     marcador.setMap(map)
 }
-function handleLocationError(browserHasGeolocation, point, pos) {
-    point.setPosition(pos);
-    var error;
-    if(browserHasGeolocation){
-        error = "Error: Localización fallida.";
-    } else {
-        error = "Error: Navegador no soportado.";
-    }
-    point.setContent(error);
-    point.open(mapaGeoposicionado);
-}
-
-mapaGoogle.verMapa = verMapa;
+mapaGoogle.initMap = initMap;
