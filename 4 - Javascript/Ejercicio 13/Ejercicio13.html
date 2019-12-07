@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Pablo Cañal Suárez - UO264903"/>
+		<title>Ejercicio 13</title>
+		<link rel="stylesheet" href="Ejercicio13.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="Ejercicio13.js"></script>
+	</head>
+
+	<body>
+		<h1>API File</h1>
+		<form>
+			<input type="file" id="fileElem" multiple style="display:none" onchange="apiFile.handleFiles(this.files)">
+		</form>
+		<div class="wrapper">
+			<span class="square individual">
+				<a class="ninth before after" href="javascript:doClick()">Seleccione sus archivos...</a>
+			</span>
+		</div>
+	</body>
+	<section class="fileSection">
+	</section>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<current>
+    <city id="3117735" name="Madrid">
+        <coord lon="-3.7" lat="40.42"></coord>
+        <country>ES</country>
+        <timezone>3600</timezone>
+        <sun rise="2019-12-07T07:24:11" set="2019-12-07T16:48:21"></sun>
+    </city>
+    <temperature value="11.93" min="11" max="13.33" unit="celsius"></temperature>
+    <humidity value="62" unit="%"></humidity>
+    <pressure value="1024" unit="hPa"></pressure>
+    <wind>
+        <speed value="0.5" unit="m/s" name="Calm"></speed>
+        <gusts></gusts>
+        <direction></direction>
+    </wind>
+    <clouds value="8" name="clear sky"></clouds>
+    <visibility value="10000"></visibility>
+    <precipitation mode="no"></precipitation>
+    <weather number="800" value="cielo claro" icon="01d"></weather>
+    <lastupdate value="2019-12-07T13:13:31"></lastupdate>
+</current>
