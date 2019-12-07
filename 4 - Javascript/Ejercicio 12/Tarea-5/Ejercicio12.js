@@ -1,7 +1,7 @@
 var mapaGoogle = new Object();
 function initMap() {
     var centro = { lat: 43.36335880146701, lng: -5.854131194383698 };
-    var map = new google.maps.Map(document.getElementById('mapa'), {
+    mapaGoogle = new google.maps.Map(document.getElementById('mapa'), {
         zoom: 8,
         center: centro,
         mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -18,6 +18,5 @@ function initMap() {
             marcador.setTitle("Ubicación actual");
         });
     }
-    marcador.setMap(map)
+    marcador.setMap(mapaGoogle)
 }
-mapaGoogle.initMap = initMap;
