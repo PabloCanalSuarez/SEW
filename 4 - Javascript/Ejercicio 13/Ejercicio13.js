@@ -1,9 +1,4 @@
 class FileHandler {
-    constructor() {
-        this.base = "EUR";
-        this.symbols = ["USD", "GBP", "CAD", "CHF", "SEK"];
-        this.url = "https://api.exchangeratesapi.io/latest?base="+this.base+"&symbols="+this.symbols[0]+","+this.symbols[1]+","+this.symbols[2]+","+this.symbols[3]+","+this.symbols[4];
-    }
     handleFiles(files){
         let fileList = files;
         const numFiles = fileList.length;
