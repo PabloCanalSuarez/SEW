@@ -7,19 +7,19 @@
 		<link rel="stylesheet" href="MapaKML.css" />
         <script src="MapaKML.js"></script>
         <script src="geoxml3.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXq-aaHMAMhmatBRRpVkRm_-O4yzPyN5A"></script>
 	</head>
 
 	<body>
         <h1>API Google Maps - KML</h1>
         <form>
-			<input type="file" id="fileElem" style="display:none" onchange="map.init(this.files)">
+			<input type="file" id="fileElem" style="display:none" onchange="map.init(this.files)"/>
 		</form>
 		<div class="wrapper">
 			<span class="square individual">
 				<a class="ninth before after" href="javascript:doClick()">Seleccione un KML</a>
 			</span>
 		</div>
-        <div id="mapa"></div>
+		<div id="mapa"></div>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXq-aaHMAMhmatBRRpVkRm_-O4yzPyN5A"></script>
 	</body>
 </html>

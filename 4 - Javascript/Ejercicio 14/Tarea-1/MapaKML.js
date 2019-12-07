@@ -4,16 +4,20 @@ class MapaKML {
         const file = fileList[0];
         if (file.name.includes('.kml')) {
             const reader = new FileReader();
+            reader.readAsText(file);
             reader.onload = () => {
-                const map = new google.maps.Map(document.getElementById("mapa"), {
-                    zoom: 10,
+                let map = new google.maps.Map(document.getElementById("mapa"), {
+                    zoom: 14,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
                 });
-                const geoXml = new geoXML3.parser({map: map});
+                let geoXml = new geoXML3.parser({
+                    map: map,
+                    singleInfoWindow: true,
+                });
                 geoXml.parseKmlString(reader.result);
             };
-            reader.readAsText(file);
         } else {
-            alert("Error : ¡Archivo no válido!");
+            alert("Error : El archivo debe tener formato .kml");
         }
     }
 }
