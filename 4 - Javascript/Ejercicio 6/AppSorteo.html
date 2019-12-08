@@ -1,0 +1,24 @@
+<html> 
+<head> 
+    <meta charset="UTF-8">
+	<meta name="author" content="Pablo Cañal Suárez - UO264903"/>
+	<title>WishMeLuck</title>
+	<link rel="stylesheet" href="AppSorteo.css" />
+	<script src="AppSorteo.js"></script>
+</head> 
+
+<body> 
+	<h1>Wish Me Luck</h1>
+	<h2>¿Quiere un ganador? ¡Sortee con WishMeLuck!</h2>
+	<p>Por favor, introduzca la lista de participantes:</p>
+	<textarea id="listaSorteo" placeholder="Lista de participantes" cols="30" rows="10"></textarea>
+	<table id="buttons">
+		<tr>
+			<td><button id="btnSortear" onclick="app.sortear()">Sortear</button></td>
+			<td><button id="btnBorrar" onclick="app.borrarLista()">Borrar participantes</button></td>
+		</tr>
+	</table>
+	<section id="mostrarResultado">
+	</section>
+</body> 
+</html> 
