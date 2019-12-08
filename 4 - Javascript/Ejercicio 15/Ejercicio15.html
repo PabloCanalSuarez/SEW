@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Pablo Cañal Suárez - UO264903"/>
+		<title>Ejercicio 15</title>
+		<link rel="stylesheet" href="Ejercicio15.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="Ejercicio15.js"></script>
+	</head>
+
+	<body>
+		<h1>From JPG to SVG (canvas)</h1>
+		<form>
+			<input type="file" id="fileElem" style="display:none" onchange="app.handleFiles(this.files)">
+		</form>
+		<div class="wrapper">
+			<span class="square individual">
+				<a class="ninth before after" href="javascript:doClick()">Seleccione una imagen...</a>
+			</span>
+		</div>
+		<div class="wrapper">
+			<span class="square individual">
+				<a class="ninth before after" href="javascript:app.draw()">Dibujar</a>
+			</span>
+		</div>
+		<div class="wrapper">
+			<span class="square individual">
+				<a class="ninth before after" href="javascript:app.downloadSVG()">Guardar en SVG</a>
+			</span>
+		</div>
+		<a id="link" download>Descargar SVG</a>
+	</body>
+	<canvas id="canvas" width="400" height="400"></canvas>
+</html>
