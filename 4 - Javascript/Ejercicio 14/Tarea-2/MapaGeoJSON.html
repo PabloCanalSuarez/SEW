@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Pablo Cañal Suárez - UO264903"/>
+		<title>Ejercicio 14 - Tarea 2</title>
+		<link rel="stylesheet" href="MapaGeoJSON.css" />
+		<script src="MapaGeoJSON.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCXq-aaHMAMhmatBRRpVkRm_-O4yzPyN5A"></script>
+	</head>
+
+	<body>
+        <h1>API Google Maps - GeoJSON</h1>
+        <form>
+			<input type="file" id="fileElem" style="display:none" onchange="map.init(this.files)"/>
+		</form>
+		<div class="wrapper">
+			<span class="square individual">
+				<a class="ninth before after" href="javascript:doClick()">Seleccione un GeoJSON</a>
+			</span>
+		</div>
+		<div id="mapa"></div>
+	</body>
+</html>

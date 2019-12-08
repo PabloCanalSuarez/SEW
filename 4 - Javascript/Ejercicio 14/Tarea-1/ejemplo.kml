@@ -1,24 +1,125 @@
-<?xml version="1.0" encoding ="UTF-8"?>
-<kml xmlns= "http://www.opengis.net/kml/2.2 "> 
-<Document>
-<Placemark>
-<name>output1.log</name>
-<LineString>
-<extrude>1</extrude>
-<tessellate>1</tessellate>
-<coordinates>
--5.865946,43.37908,0
--5.868376,43.380249,0
--5.866667,43.383333,0
+<?xml version="1.0" encoding="utf-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Ruta por Oviedo</name>
+    <descripcion>Visita turistica por la zona antigua de Oviedo</descripcion>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>501400F0</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>501400F0</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absoluto</altitudeMode>
+        <coordinates>-5.84932387,43.36273115,239
+-5.83725,43.367694,195
+-5.843081,43.362583,242
+-5.86837466,43.38030365,395
 </coordinates>
-<altitudeMode>relativeToGround</altitudeMode>
-</LineString>
-<Style> id='lineaRoja'>
-<LineStyle>
-<color>#ff0000ff</color>
-<width>5</width>
-</LineStyle>
-</Style>
-</Placemark>
-</Document>
+      </LineString>
+    </Placemark>
+    <name>Ruta de pinchoteo por Oviedo</name>
+    <descripcion>Ruta de pinchoteo, tapas y monumentos por los lugares emblemáticos de Oviedo</descripcion>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>501400F0</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>501400F0</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absoluto</altitudeMode>
+        <coordinates>-5.847934,43.361734,233
+-5.847934,43.361734,233
+-5.843081,43.362583,242
+-5.843077,43.359275,230
+</coordinates>
+      </LineString>
+    </Placemark>
+    <name>Ruta gastronómica por Oviedo</name>
+    <descripcion>Ruta gastronómica por los restaurantes más relevantes de Oviedo</descripcion>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>501400F0</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>501400F0</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absoluto</altitudeMode>
+        <coordinates>-5.85170567,43.36623329,233
+-5.85234135,43.36635223,233
+-5.85308701,43.3660071,236
+-5.85345984,43.36613969,235
+</coordinates>
+      </LineString>
+    </Placemark>
+    <name>Ruta por los pueblos de Asturias</name>
+    <descripcion>Ruta por algunos de los pueblos más bonitos de Asturias</descripcion>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>501400F0</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>501400F0</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absoluto</altitudeMode>
+        <coordinates>-5.65541089,43.54061396,15
+-5.26955366,43.51664963,119
+-5.26992917,43.4858708,19
+-5.05926847,43.46280168,13
+</coordinates>
+      </LineString>
+    </Placemark>
+    <name>Ruta por los museos de Asturias</name>
+    <descripcion>Ruta por los museos principales de Asturias</descripcion>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>501400F0</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>501400F0</color>
+      </PolyStyle>
+    </Style>
+    <Placemark>
+      <styleUrl>#yellowLineGreenPoly</styleUrl>
+      <LineString>
+        <extrude>1</extrude>
+        <tessellate>1</tessellate>
+        <altitudeMode>absoluto</altitudeMode>
+        <coordinates>-5.84626615,43.36210129,236
+-5.84440202,43.36191798,242
+-5.67343533,43.54099698,3
+-5.27426898,43.50104816,163
+</coordinates>
+      </LineString>
+    </Placemark>
+  </Document>
 </kml>
