@@ -12,24 +12,33 @@ class CalculadoraRPN {
         switch(val){
             case "+":
                 x = this.stack.pop() + this.stack.pop();
+                this.clrStackLastTwo();
+                this.writeStack(x);
+                this.evaluateStackLength();
                 break;
             case "-":
                 x = this.stack.pop() - this.stack.pop();
+                this.clrStackLastTwo();
+                this.writeStack(x);
+                this.evaluateStackLength();
                 break;
             case "/":
                 x = this.stack.pop() / this.stack.pop();
+                this.clrStackLastTwo();
+                this.writeStack(x);
+                this.evaluateStackLength();
                 break;
             case "*":
                 x = this.stack.pop() * this.stack.pop();
+                this.clrStackLastTwo();
+                this.writeStack(x);
+                this.evaluateStackLength();
                 break;
             default:
                 document.getElementById("result").value += val;
                 break;
         }
         this.stack.push(x);
-        this.clrStackLastTwo();
-        this.writeStack(x);
-        this.evaluateStackLength();
     } 
     
     //evaluates the expression and returns result 

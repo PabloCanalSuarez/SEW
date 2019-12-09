@@ -1,0 +1,55 @@
+body{
+  background-color:#F3F2F4;
+  color:black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: rgb(147, 166, 97);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 45px 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+  margin-left: 50px;
+  color:rgb(97, 166, 151);
+}
+h3{
+  text-align:center;
+  color:rgb(128, 128, 255);
+}
+h4{
+  text-align:center;
+  color:black;
+}
+p[id="listData"]{
+  margin-left: auto;
+  margin-right: auto;
+}
+button{
+  background-color: #5f758d;
+  border-color: white;
+  border-radius: 4px;
+  color: white;
+  width: 100;
+  margin-left: 50px;
+  margin-top: 10px;
+  height: 35px;
+}
+a,a:visited,a:hover,a:active{
+  -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+	position:relative;
+  transition:0.5s color ease;
+	text-decoration:none;
+	color:white;
+	font-size: 30px;
+}
+a:hover{
+	color:rgb(233, 199, 62);
+}
