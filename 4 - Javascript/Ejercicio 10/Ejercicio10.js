@@ -35,7 +35,7 @@ class MoneyRates {
         this.addElement("h3","Exchange Rates","section");
         this.addElement("p","","section");
         this.cargarDatos();
-        $("button").attr("disabled","disabled");
+        $("#button").attr("disabled","disabled");
     }
 }
 var rates = new MoneyRates();

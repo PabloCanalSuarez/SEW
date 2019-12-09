@@ -4,7 +4,7 @@ document.write("</p>");
 document.write("<p>Idioma: ");
 document.write(infoNavegador.idioma);
 document.write("</p>");
-document.write("<p>VersiÃ³n: ");
+document.write("<p>Versión: ");
 document.write(infoNavegador.version);
 document.write("</p>");
 document.write("<p>Plataforma: ");

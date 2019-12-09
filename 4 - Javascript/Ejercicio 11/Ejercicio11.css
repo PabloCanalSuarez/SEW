@@ -15,16 +15,8 @@ h1{
   font-size: 35px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-input[type="button"]{
-  margin-top: 10px;
-  border-radius: 6px;
-  background-color: #e7e7e7;
-  color: black;
-  width: 140;
-  height: 35px;
-}
 h2{
-  text-align:center;
+  margin-left: 50px;
   color:#93A661;
 }
 h3{
@@ -37,6 +29,22 @@ h4{
 }
 p{
   color:gray;
+}
+form{
+  margin-left: 50px;
+}
+label, .movieData, .movieChecks{
+  margin-top: 5px;
+}
+button{
+  background-color: #3182aa;
+  border-color: white;
+  border-radius: 6px;
+  color: white;
+  width: 100;
+  margin-left: 50px;
+  margin-top: 10px;
+  height: 35px;
 }
 /* Link animation */
 a,a:visited,a:hover,a:active{

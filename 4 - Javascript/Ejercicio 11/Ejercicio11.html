@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Pablo Cañal Suárez - UO264903"/>
+		<title>Ejercicio 11</title>
+		<link rel="stylesheet" href="Ejercicio11.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="Ejercicio11.js"></script>
+	</head>
+
+	<body>
+		<h1>MovieData - Basado en <a class="first after" href="http://www.omdbapi.com/">OMDB API</a></h1>
+		<h2>Buscar una película</h2>
+		<form id="buscarPelicula">
+			<label for="tituloPelicula">Título:</label>
+			<input class="movieData" type="text" id="tituloPelicula" placeholder="Título"/><br>
+
+			<input class="movieChecks" type="checkbox" id="chckType" onclick='app.handleClick(this);'/>
+			<label for="typePelicula">Tipo:</label>
+			<input class="movieData" type="text" id="typePelicula" placeholder="Tipo" title='Escriba una de las opciones: movie, series, episode' disabled/><br>
+
+			<input class="movieChecks" type="checkbox" id="chckYear" onclick='app.handleClick(this);'/>
+			<label for="yearPelicula">Año:</label>
+			<input class="movieData" type="text" id="yearPelicula" placeholder="Año" disabled/><br>
+		</form>
+		<button id="cargarDatos" onclick="app.procesar()">Cargar</button>
+	</body>
+	<section id="resultData">
+	</section>
+</html>

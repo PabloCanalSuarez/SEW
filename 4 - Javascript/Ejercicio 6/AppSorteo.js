@@ -7,7 +7,7 @@ class AppSorteo {
     sortear(){
         let contentsList = document.getElementById("listaSorteo").value.split("\n");
         let maxSorteo = contentsList.length;
-        if(maxSorteo > 0 && contentsList[0] != ""){
+        if(maxSorteo > 0 && contentsList[0] != "" && contentsList[0].trim() != "" ){
             let result = Math.floor(Math.random() * maxSorteo);
         
             this.resultado = contentsList[result];
