@@ -1,2 +1,3 @@
 # SEW
-3rd Grade: SEW
+
+Repository for 2019-2020 **SEW** course assignment.
