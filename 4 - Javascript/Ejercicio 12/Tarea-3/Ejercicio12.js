@@ -52,7 +52,7 @@ class GeoLocalizacion {
     mostrarMapa(){
         var localizacion = document.getElementById("mapa");
 
-        var apiKey = "&key=AIzaSyCXq-aaHMAMhmatBRRpVkRm_-O4yzPyN5A";
+        var apiKey = "&key=[FILL_IN_HERE]";
 
         var url = "https://maps.googleapis.com/maps/api/staticmap?";
 
